@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Recipe Sharing Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="submit.html">Submit Recipe</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Submit a New Recipe</h2>
+            <form id="recipe-form">
+                <label for="title">Recipe Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" required></textarea>
+
+                <label for="ingredients">Ingredients (comma separated):</label>
+                <textarea name="ingredients" id="ingredients" required></textarea>
+
+                <label for="instructions">Instructions (comma separated):</label>
+                <textarea name="instructions" id="instructions"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Sharing Website</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
